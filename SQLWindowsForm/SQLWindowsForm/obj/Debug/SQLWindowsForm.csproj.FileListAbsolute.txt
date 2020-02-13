@@ -1,0 +1,9 @@
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\SQLWindowsForm\bin\Debug\SQLWindowsForm.exe.config
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\SQLWindowsForm\bin\Debug\SQLWindowsForm.exe
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\SQLWindowsForm\bin\Debug\SQLWindowsForm.pdb
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\SQLWindowsForm\obj\Debug\SQLWindowsForm.csprojResolveAssemblyReference.cache
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\SQLWindowsForm\obj\Debug\SQLWindowsForm.Properties.Resources.resources
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\SQLWindowsForm\obj\Debug\SQLWindowsForm.csproj.GenerateResource.Cache
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\SQLWindowsForm\obj\Debug\SQLWindowsForm.exe
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\SQLWindowsForm\obj\Debug\SQLWindowsForm.pdb
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\SQLWindowsForm\obj\Debug\SQLWindowsForm.Form1.resources
