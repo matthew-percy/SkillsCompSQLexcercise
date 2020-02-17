@@ -1,0 +1,10 @@
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\EmployeeSystemV2\bin\Debug\EmployeeSystemV2.exe.config
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\EmployeeSystemV2\bin\Debug\EmployeeSystemV2.exe
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\EmployeeSystemV2\bin\Debug\EmployeeSystemV2.pdb
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\EmployeeSystemV2\obj\Debug\EmployeeSystemV2.csprojResolveAssemblyReference.cache
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\EmployeeSystemV2\obj\Debug\EmployeeSystemV2.Properties.Resources.resources
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\EmployeeSystemV2\obj\Debug\EmployeeSystemV2.frmEmployee.resources
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\EmployeeSystemV2\obj\Debug\EmployeeSystemV2.csproj.GenerateResource.Cache
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\EmployeeSystemV2\obj\Debug\EmployeeSystemV2.exe
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\EmployeeSystemV2\obj\Debug\EmployeeSystemV2.pdb
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\EmployeeSystemV2\obj\Debug\EmployeeSystemV2.UI.frmSearchEmployee.resources
