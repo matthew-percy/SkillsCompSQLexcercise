@@ -1,0 +1,12 @@
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\ProductSystem\bin\Debug\ProductSystem.exe.config
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\ProductSystem\bin\Debug\ProductSystem.exe
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\ProductSystem\bin\Debug\ProductSystem.pdb
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\ProductSystem\obj\Debug\ProductSystem.Properties.Resources.resources
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\ProductSystem\obj\Debug\ProductSystem.csproj.GenerateResource.Cache
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\ProductSystem\obj\Debug\ProductSystem.exe
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\ProductSystem\obj\Debug\ProductSystem.pdb
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\ProductSystem\bin\Debug\SOC.Core.dll
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\ProductSystem\bin\Debug\SOC.Core.pdb
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\ProductSystem\obj\Debug\ProductSystem.csprojResolveAssemblyReference.cache
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\ProductSystem\obj\Debug\ProductSystem.frmProduct.resources
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\ProductSystem\obj\Debug\ProductSystem.frmSearch.resources
