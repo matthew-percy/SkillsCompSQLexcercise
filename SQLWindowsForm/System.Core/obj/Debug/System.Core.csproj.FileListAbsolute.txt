@@ -1,0 +1,5 @@
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\System.Core\bin\Debug\System.Core.dll
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\System.Core\bin\Debug\System.Core.pdb
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\System.Core\obj\Debug\System.Core.csprojResolveAssemblyReference.cache
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\System.Core\obj\Debug\System.Core.dll
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\System.Core\obj\Debug\System.Core.pdb

@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\DBManager.cs" />
     <Compile Include="UI\frmEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +90,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Core\SOC.Core.csproj">
+      <Project>{5e63b478-6a93-4fef-985c-30c118ee4f46}</Project>
+      <Name>SOC.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
