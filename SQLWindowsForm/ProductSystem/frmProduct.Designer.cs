@@ -57,7 +57,7 @@
             // labelID
             // 
             this.labelID.AutoSize = true;
-            this.labelID.Location = new System.Drawing.Point(46, 30);
+            this.labelID.Location = new System.Drawing.Point(92, 30);
             this.labelID.Name = "labelID";
             this.labelID.Size = new System.Drawing.Size(21, 13);
             this.labelID.TabIndex = 1;
@@ -66,7 +66,7 @@
             // labelProductName
             // 
             this.labelProductName.AutoSize = true;
-            this.labelProductName.Location = new System.Drawing.Point(7, 56);
+            this.labelProductName.Location = new System.Drawing.Point(35, 56);
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(78, 13);
             this.labelProductName.TabIndex = 2;
@@ -75,7 +75,7 @@
             // labelUnit
             // 
             this.labelUnit.AutoSize = true;
-            this.labelUnit.Location = new System.Drawing.Point(7, 82);
+            this.labelUnit.Location = new System.Drawing.Point(84, 82);
             this.labelUnit.Name = "labelUnit";
             this.labelUnit.Size = new System.Drawing.Size(29, 13);
             this.labelUnit.TabIndex = 3;
@@ -84,7 +84,7 @@
             // labelPrice
             // 
             this.labelPrice.AutoSize = true;
-            this.labelPrice.Location = new System.Drawing.Point(36, 109);
+            this.labelPrice.Location = new System.Drawing.Point(79, 109);
             this.labelPrice.Name = "labelPrice";
             this.labelPrice.Size = new System.Drawing.Size(34, 13);
             this.labelPrice.TabIndex = 4;
@@ -141,7 +141,7 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(325, 39);
+            this.buttonAdd.Location = new System.Drawing.Point(82, 192);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(75, 23);
             this.buttonAdd.TabIndex = 10;
@@ -151,7 +151,7 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(325, 70);
+            this.buttonUpdate.Location = new System.Drawing.Point(163, 192);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(75, 23);
             this.buttonUpdate.TabIndex = 11;
@@ -161,7 +161,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(325, 99);
+            this.buttonDelete.Location = new System.Drawing.Point(244, 192);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(75, 23);
             this.buttonDelete.TabIndex = 12;
@@ -172,15 +172,16 @@
             // numUpDownPrice
             // 
             this.numUpDownPrice.DecimalPlaces = 2;
-            this.numUpDownPrice.Location = new System.Drawing.Point(119, 109);
+            this.numUpDownPrice.Location = new System.Drawing.Point(119, 105);
             this.numUpDownPrice.Name = "numUpDownPrice";
             this.numUpDownPrice.Size = new System.Drawing.Size(200, 20);
             this.numUpDownPrice.TabIndex = 13;
+            this.numUpDownPrice.ValueChanged += new System.EventHandler(this.EmployeeDataEdited);
             // 
             // labelSupplier
             // 
             this.labelSupplier.AutoSize = true;
-            this.labelSupplier.Location = new System.Drawing.Point(33, 149);
+            this.labelSupplier.Location = new System.Drawing.Point(65, 138);
             this.labelSupplier.Name = "labelSupplier";
             this.labelSupplier.Size = new System.Drawing.Size(48, 13);
             this.labelSupplier.TabIndex = 14;
@@ -189,7 +190,7 @@
             // labelCategory
             // 
             this.labelCategory.AutoSize = true;
-            this.labelCategory.Location = new System.Drawing.Point(36, 186);
+            this.labelCategory.Location = new System.Drawing.Point(61, 160);
             this.labelCategory.Name = "labelCategory";
             this.labelCategory.Size = new System.Drawing.Size(52, 13);
             this.labelCategory.TabIndex = 15;
@@ -197,7 +198,7 @@
             // 
             // txtBoxSupplierName
             // 
-            this.txtBoxSupplierName.Location = new System.Drawing.Point(172, 146);
+            this.txtBoxSupplierName.Location = new System.Drawing.Point(172, 131);
             this.txtBoxSupplierName.Name = "txtBoxSupplierName";
             this.txtBoxSupplierName.ReadOnly = true;
             this.txtBoxSupplierName.Size = new System.Drawing.Size(147, 20);
@@ -206,7 +207,7 @@
             // 
             // txtBoxCategoryName
             // 
-            this.txtBoxCategoryName.Location = new System.Drawing.Point(172, 179);
+            this.txtBoxCategoryName.Location = new System.Drawing.Point(172, 157);
             this.txtBoxCategoryName.Name = "txtBoxCategoryName";
             this.txtBoxCategoryName.ReadOnly = true;
             this.txtBoxCategoryName.Size = new System.Drawing.Size(147, 20);
@@ -215,7 +216,7 @@
             // 
             // txtBoxSupplierID
             // 
-            this.txtBoxSupplierID.Location = new System.Drawing.Point(119, 146);
+            this.txtBoxSupplierID.Location = new System.Drawing.Point(119, 131);
             this.txtBoxSupplierID.Name = "txtBoxSupplierID";
             this.txtBoxSupplierID.ReadOnly = true;
             this.txtBoxSupplierID.Size = new System.Drawing.Size(47, 20);
@@ -224,7 +225,7 @@
             // 
             // txtBoxCategoryID
             // 
-            this.txtBoxCategoryID.Location = new System.Drawing.Point(119, 179);
+            this.txtBoxCategoryID.Location = new System.Drawing.Point(119, 157);
             this.txtBoxCategoryID.Name = "txtBoxCategoryID";
             this.txtBoxCategoryID.ReadOnly = true;
             this.txtBoxCategoryID.Size = new System.Drawing.Size(47, 20);
@@ -233,7 +234,7 @@
             // 
             // buttonSearchSupplier
             // 
-            this.buttonSearchSupplier.Location = new System.Drawing.Point(325, 144);
+            this.buttonSearchSupplier.Location = new System.Drawing.Point(325, 128);
             this.buttonSearchSupplier.Name = "buttonSearchSupplier";
             this.buttonSearchSupplier.Size = new System.Drawing.Size(75, 23);
             this.buttonSearchSupplier.TabIndex = 20;
@@ -243,7 +244,7 @@
             // 
             // buttonSearchCategory
             // 
-            this.buttonSearchCategory.Location = new System.Drawing.Point(325, 177);
+            this.buttonSearchCategory.Location = new System.Drawing.Point(325, 157);
             this.buttonSearchCategory.Name = "buttonSearchCategory";
             this.buttonSearchCategory.Size = new System.Drawing.Size(75, 23);
             this.buttonSearchCategory.TabIndex = 21;

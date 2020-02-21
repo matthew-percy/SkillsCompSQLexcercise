@@ -45,7 +45,7 @@ namespace ProductSystem
                     buttonSearchSupplier.Enabled = false;
                     buttonSearchCategory.Enabled = false;
                 }   
-                if (currentState != value) //if new state is different
+                //if (currentState != value) //if new state is different
                 {
                     if (value == State.Add)
                     {
@@ -116,6 +116,11 @@ namespace ProductSystem
             txtBoxProductName.Clear();
             //datePicker.Value = DateTime.Now;
             numUpDownPrice.Value = Decimal.Zero;
+
+            txtBoxSupplierID.Clear();
+            txtBoxSupplierName.Clear();
+            txtBoxCategoryID.Clear();
+            txtBoxCategoryName.Clear();
         }
 
 
@@ -169,7 +174,15 @@ namespace ProductSystem
             //if(string.IsNullOrWhiteSpace(txtBoxFirstName.Text)
 
             //DBManager.AddEmployee(txtBoxUnit.Text, txtBoxProductName.Text, datePicker.Value);
-            
+            try
+            {
+                DBManager.AddProduct(txtBoxProductName.Text, int.Parse(txtBoxSupplierID.Text), int.Parse(txtBoxCategoryID.Text), txtBoxUnit.Text, float.Parse(numUpDownPrice.Value.ToString()));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Parameters missing or invalid");
+                return;
+            }
 
             CurrentState = State.NoState;
         }
@@ -177,12 +190,18 @@ namespace ProductSystem
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
             //DBManager.UpdateEmployee(int.Parse(txtBoxID.Text), txtBoxUnit.Text, txtBoxProductName.Text, datePicker.Value);
+
+            DBManager.UpdateProduct(int.Parse(txtBoxID.Text), txtBoxProductName.Text, int.Parse(txtBoxSupplierID.Text), int.Parse(txtBoxCategoryID.Text), txtBoxUnit.Text, float.Parse(numUpDownPrice.Value.ToString()));
+
             CurrentState = State.NoState;
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             //DBManager.DeleteEmployee(int.Parse(txtBoxID.Text));
+
+            DBManager.DeleteProduct(int.Parse(txtBoxID.Text));
+
             CurrentState = State.NoState;
         }
 

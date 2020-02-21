@@ -88,13 +88,64 @@ SELECT ProductID
 
             return table;
         }
-
         public static DataTable SelectAllFromSupplierTable(string condition)
         {
             Connection.Open();
 
             SqlCommand command = new SqlCommand();
-            command.CommandText = @"SELECT * FROM Suppliers";
+            command.CommandText = @"
+                                    DECLARE @SEARCH_INFO AS TABLE ( SupplierID INT
+                              , SupplierName  NVARCHAR(255)
+							  , ContactName NVARCHAR(255)
+							  , ContactAddress NVARCHAR(255)
+							  , City NVARCHAR(255)
+							  , PostalCode NVARCHAR(255)
+							  , Country  NVARCHAR(255)
+							  , Phone      NVARCHAR(255)
+							  , Search     VARCHAR(999)
+							  )
+
+INSERT INTO @SEARCH_INFO ( A.SupplierID
+						 , A.SupplierName
+					     , A.ContactName
+						 , A.ContactAddress
+					     , A.City
+					     , A.PostalCode
+					   	 , A.Country
+						 , A.Phone   
+						 , Search
+						 )
+						 
+SELECT  A.SupplierID
+      , A.SupplierName
+      , A.ContactName
+	  , A.ContactAddress
+	  , A.City
+	  , A.PostalCode
+	  , A.Country
+	  , A.Phone
+	  , CONVERT(VARCHAR(20), A.SupplierID) 
+	  + A.SupplierName
+	  + A.ContactName
+	  + A.ContactAddress
+	  + A.City
+	  + A.PostalCode
+	  + A.Country
+	  + A.Phone AS [SEARCH]
+  FROM Suppliers A
+	 
+SELECT  
+                           SupplierID 
+						 , SupplierName 
+						 , ContactName
+						 , ContactAddress 
+						 , City
+						 , PostalCode
+						 , Country
+						 , Phone  
+						 --, Search
+  FROM @SEARCH_INFO
+ where Search like ('%' + @SEARCH + '%')";
 
             command.Parameters.Add(new SqlParameter("SEARCH", condition));
             command.Connection = Connection;
@@ -114,7 +165,34 @@ SELECT ProductID
             Connection.Open();
 
             SqlCommand command = new SqlCommand();
-            command.CommandText = @"SELECT * FROM Categories";
+            command.CommandText = @"
+                                    DECLARE @SEARCH_INFO AS TABLE ( CategoryID INT
+                              , CategoryName  NVARCHAR(255)
+							  , CategoryDesc NVARCHAR(255)
+							  , Search     VARCHAR(999)
+							  )
+
+INSERT INTO @SEARCH_INFO ( A.CategoryID
+						 , A.CategoryName
+					     , A.CategoryDesc   
+						 , Search
+						 )
+						 
+SELECT  A.CategoryID
+      , A.CategoryName
+      , A.CategoryDesc
+	  , CONVERT(VARCHAR(20), A.CategoryID) 
+	  + A.CategoryName
+	  + A.CategoryDesc AS [SEARCH]
+  FROM Categories A
+	 
+SELECT  
+                           CategoryID 
+						 , CategoryName
+						 , CategoryDesc
+						 --, Search
+  FROM @SEARCH_INFO
+ where Search like ('%' + @SEARCH + '%')";
 
             command.Parameters.Add(new SqlParameter("SEARCH", condition));
             command.Connection = Connection;
@@ -161,13 +239,45 @@ SELECT ProductID
 
             Connection.Close();
         }
-        public static void DeleteProduct(int employee)
+        public static void DeleteProduct(int productID)
         {
+            Connection.Open();
 
+            SqlCommand command = new SqlCommand();
+            command.CommandText = @"DELETE FROM [dbo].[Products]
+                                           WHERE ProductID = @ProductID";
+            command.Parameters.Add(new SqlParameter("ProductID", productID));
+            command.Connection = Connection;
+
+            command.ExecuteNonQuery();
+
+            Connection.Close();
         }
-        public static void UpdateProduct(int employee, string lastName, string firstName, DateTime birth)
+        public static void UpdateProduct(int productID, string productName, int supplierID, int categoryID,string unit, float price)
         {
+            Connection.Open();
 
+            SqlCommand command = new SqlCommand();
+            command.CommandText = @" UPDATE [dbo].[Products]
+                                    SET [ProductName] = @ProductName
+                                       ,[SupplierID] = @SupplierID
+                                       ,[CategoryID] = @CategoryID
+                                       ,[Unit] = @Unit
+                                       ,[Price] = @Price
+                                       WHERE ProductID = @ProductID
+
+";
+            command.Parameters.Add(new SqlParameter("ProductID", productID));
+            command.Parameters.Add(new SqlParameter("ProductName", productName));
+            command.Parameters.Add(new SqlParameter("SupplierID", supplierID));
+            command.Parameters.Add(new SqlParameter("CategoryID", categoryID));
+            command.Parameters.Add(new SqlParameter("Unit", unit));
+            command.Parameters.Add(new SqlParameter("Price", price));
+            command.Connection = Connection;
+
+            command.ExecuteNonQuery();
+
+            Connection.Close();
         }
 
 
@@ -242,7 +352,7 @@ SELECT ProductID
             command.Connection = Connection;
 
             command.ExecuteNonQuery();
-
+            
             Connection.Close();
         }
 
