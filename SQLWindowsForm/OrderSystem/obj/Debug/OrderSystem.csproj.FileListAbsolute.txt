@@ -1,0 +1,12 @@
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\OrderSystem\bin\Debug\OrderSystem.exe.config
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\OrderSystem\obj\Debug\OrderSystem.csprojResolveAssemblyReference.cache
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\OrderSystem\obj\Debug\OrderSystem.frmOrder.resources
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\OrderSystem\obj\Debug\OrderSystem.frmSearch.resources
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\OrderSystem\obj\Debug\OrderSystem.Properties.Resources.resources
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\OrderSystem\obj\Debug\OrderSystem.csproj.GenerateResource.Cache
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\OrderSystem\bin\Debug\OrderSystem.exe
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\OrderSystem\bin\Debug\OrderSystem.pdb
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\OrderSystem\bin\Debug\SOC.Core.dll
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\OrderSystem\bin\Debug\SOC.Core.pdb
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\OrderSystem\obj\Debug\OrderSystem.exe
+F:\_SKILLSCOMP\WEEK14\SQLWindowsForm\OrderSystem\obj\Debug\OrderSystem.pdb
