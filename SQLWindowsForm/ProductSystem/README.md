@@ -1,6 +1,6 @@
-# Order System 
+# Prouct System 
 
-##### Order Form
+##### Product Form
  Features to Add, Update, and Delete Products from the database
  
 ![Image of Program](https://raw.githubusercontent.com/mrbru3/SkillsCompSQLexcercise/master/SQLWindowsForm/ProductSystem/ProductForm.png)
